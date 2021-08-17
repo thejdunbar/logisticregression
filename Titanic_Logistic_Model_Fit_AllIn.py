@@ -97,7 +97,7 @@ dataset['Age'] = imputer.transform(dataset['Age'].values.reshape(-1, 1))'''
 X = train.iloc[:, [2, 4, 5, 6, 7, 9, 10]]
 y = train.iloc[:, 1]
 
-
+# see mee?
 
 
 
