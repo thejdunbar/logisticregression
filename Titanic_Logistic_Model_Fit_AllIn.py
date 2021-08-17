@@ -7,8 +7,10 @@ import pandas as pd
 import seaborn as sns
 
 # Importing the dataset
-train = pd.read_csv('titanic_train.csv')
-
+#train = pd.read_csv('titanic_train.csv')
+#train = pd.read_csv('dataset.csv', sep='|')
+train=pd.read_csv("https://raw.githubusercontent.com/rebeccabilbro/titanic/master/data/train.csv")
+train.head()
 '''
 Logistic regression does not make many of the key assumptions of linear
 regression and general linear models that are based on ordinary least squares
@@ -166,9 +168,6 @@ X_test.iloc[:, [0,3]] = sc.transform(X_test.iloc[:, [0,3]])
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression()
 classifier.fit(X_train, y_train)
-
-
-
 
 #Find relevant features
 from sklearn.model_selection import StratifiedKFold

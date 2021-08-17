@@ -6,6 +6,7 @@ then compares the two implementations for how well the can predict the given out
 for each input tuple in the datasets.
 
 @author Per Harald Borgen
+@updates- JDunbar
 """
 
 import math
